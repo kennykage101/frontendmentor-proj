@@ -16,7 +16,7 @@ body {
 .container {
   @extend .common-layout;
   background-color: map-get($map: $colors, $key: bg);
-  height: 667px;
+  height: 100vh;
   flex-direction: column;
 
   .qr-section {
