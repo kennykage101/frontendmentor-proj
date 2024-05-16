@@ -51,7 +51,7 @@ body {
       #title {
         color: map-get($map: $colors, $key: title);
         text-align: center;
-        font-family: Outfit;
+        font-family: Outfit, sans-serif;
         font-size: 22px;
         font-weight: 700;
       }
@@ -59,7 +59,7 @@ body {
       #text {
         color: map-get($map: $colors, $key: text);
         text-align: center;
-        font-family: Outfit;
+        font-family: Outfit, sans-serif;
         font-size: 15px;
         font-weight: 400;
         padding: 0 16px 0 16px;
