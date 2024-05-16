@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.common-layout, .container .qr-section .qr-body, .container .qr-section .qr-box, .container {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #d5e1ef;
+  height: 667px;
+  flex-direction: column;
+}
+.container .qr-section {
+  width: 320px;
+  height: 497px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+.container .qr-section .qr-box {
+  background: url(Oval.png) no-repeat;
+  height: 288px;
+  margin: 16px 16px 0px 16px;
+}
+.container .qr-section .qr-box img {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+}
+.container .qr-section .qr-body {
+  height: 129px;
+  margin: 16px 16px 0px 16px;
+  flex-direction: column;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.container .qr-section .qr-body #title {
+  color: #1f314f;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 700;
+}
+.container .qr-section .qr-body #text {
+  color: #7d889e;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 16px 0 16px;
+  letter-spacing: 0.188px;
+}
+
+/*# sourceMappingURL=styles.css.map */
