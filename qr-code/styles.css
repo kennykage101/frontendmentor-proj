@@ -37,7 +37,7 @@ body {
 }
 .container .qr-section .qr-body {
   height: 129px;
-  margin: 16px 16px 0px 16px;
+  margin: 24px 16px 0px 16px;
   flex-direction: column;
   gap: 16px;
   flex-shrink: 0;
