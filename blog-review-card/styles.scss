@@ -1,0 +1,117 @@
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  background-color: map-get($map: $bg-colors, $key: main);
+  width: 100%;
+  height: 100vh;
+  padding: 9.6875rem 1.5rem 9.75rem 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  .blog {
+    display: flex;
+    width: clamp(20.4375rem, 20rem + 1vw, 24rem);
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid map-get($map: $other-colors, $key: main);
+    background: map-get($map: $bg-colors, $key: light);
+    box-shadow: 8px 8px 0px 0px map-get($map: $other-colors, $key: box-shadow);
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      box-shadow: 16px 16px 0px 0px
+        map-get($map: $other-colors, $key: box-shadow);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 200px;
+      background: url(blogimage.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 0.625rem;
+    }
+
+    .blog-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      align-self: stretch;
+
+      .blog-category {
+        display: flex;
+        padding: 4px 12px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background: map-get($map: $bg-colors, $key: main);
+
+        span {
+          color: map-get($map: $other-colors, $key: main);
+          font-family: Figtree, sans-serif;
+          font-size: clamp(0.75rem, 0.5rem + 1vw, map-get($text, body-small));
+          font-weight: 800;
+          line-height: 150%;
+        }
+      }
+      .blog-publishdate {
+        color: map-get($map: $other-colors, $key: main);
+        font-family: Figtree, sans-serif;
+        font-size: clamp(0.75rem, 0.5rem + 1vw, map-get($text, body-small));
+        font-weight: 500;
+        line-height: 150%;
+      }
+      h1 {
+        color: map-get($map: $other-colors, $key: main);
+        font-family: Figtree, sans-serif;
+        font-size: clamp(1.25rem, 1rem + 1vw, map-get($text, heading));
+        margin: 0;
+        font-weight: 800;
+        line-height: 150%;
+        cursor: pointer;
+
+        &:hover {
+          color: map-get($map: $bg-colors, $key: main);
+        }
+      }
+      .blog-description {
+        color: map-get($map: $other-colors, $key: description);
+        font-family: Figtree, sans-serif;
+        font-size: clamp(0.875rem, 0.75rem + 1vw, map-get($text, body-medium));
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+    .blog-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+
+      .author-image {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+        background: url(userpic.png) no-repeat;
+      }
+      .author-name {
+        color: map-get($map: $other-colors, $key: main);
+        font-family: Figtree, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 800;
+        line-height: 150%;
+      }
+    }
+  }
+}
