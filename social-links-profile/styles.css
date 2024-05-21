@@ -1,3 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.container {
+  display: flex;
+  background-color: #141414;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.container .profile-card {
+  display: flex;
+  border-radius: 12px;
+  padding: 29px 24px 24px 24px;
+  background-color: #1f1f1f;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 375px) {
+  .container .profile-card {
+    padding: 42px 40px 40px 40px;
+  }
+}
+.container .profile-card .profile-image {
+  width: 87px;
+  height: 87px;
+  border-radius: 43px;
+  background: url(avatar-elijah.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .profile-card .profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.container .profile-card .profile-details .profile-name {
+  color: #FFFFFF;
+  margin-top: 30px;
+  font-family: Inter, sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+}
+.container .profile-card .profile-details .profile-location {
+  color: #c5f82a;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.container .profile-card .profile-description {
+  color: #FFFFFF;
+  font-family: Inter, sans-serif;
+  margin-top: 28px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.container .profile-card .profile-links {
+  display: flex;
+  margin-top: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  list-style-type: none;
+}
+.container .profile-card .profile-links .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  height: 45px;
+  width: 304px;
+  border-radius: 6px;
+  background-color: #333333;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container .profile-card .profile-links .profile-link:hover, .container .profile-card .profile-links .profile-link:focus {
+  background-color: #c5f82a;
+  color: #141414;
+}
+.container .profile-card .profile-links .profile-link a {
+  text-decoration: none;
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  color: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+}
 
 /*# sourceMappingURL=styles.css.map */

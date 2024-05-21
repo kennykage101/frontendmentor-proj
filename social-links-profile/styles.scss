@@ -1,0 +1,113 @@
+@import "_variables.scss";
+
+@mixin media-min-width($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background-color: map-get($map: $neutral-colors, $key: off-black);
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  .profile-card {
+    display: flex;
+    border-radius: 12px;
+    padding: 29px 24px 24px 24px;
+    background-color: map-get($map: $neutral-colors, $key: dark-grey);
+    flex-direction: column;
+    align-items: center;
+    @include media-min-width(375px) {
+      padding: 42px 40px 40px 40px;
+    }
+
+    .profile-image {
+      width: 87px;
+      height: 87px;
+      border-radius: 43px;
+      background: url(avatar-elijah.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .profile-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+
+      .profile-name {
+        color: map-get($map: $neutral-colors, $key: white);
+        margin-top: 30px;
+        font-family: Inter, sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+      }
+
+      .profile-location {
+        color: $primary-color;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    .profile-description {
+      color: map-get($map: $neutral-colors, $key: white);
+      font-family: Inter, sans-serif;
+      margin-top: 28px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .profile-links {
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      list-style-type: none;
+
+      .profile-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: map-get($map: $neutral-colors, $key: white);
+        height: 45px;
+        width: 304px;
+        border-radius: 6px;
+        background-color: map-get($map: $neutral-colors, $key: grey);
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover,
+        &:focus {
+          background-color: $primary-color;
+          color: map-get($map: $neutral-colors, $key: off-black);
+        }
+        a {
+          text-decoration: none;
+          width: 100%;
+          padding: 14px 0;
+          text-align: center;
+          color: inherit;
+          font-weight: 600;
+          font-size: 14px;
+          font-family: Inter, sans-serif;
+        }
+      }
+    }
+  }
+}
