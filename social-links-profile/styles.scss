@@ -50,7 +50,7 @@
 
       .profile-name {
         color: map-get($map: $neutral-colors, $key: white);
-        margin-top: 26px;
+        margin-top: 25px;
         font-family: Inter, sans-serif;
         font-size: 23px;
         font-weight: 700;
@@ -67,7 +67,7 @@
     .profile-description {
       color: map-get($map: $neutral-colors, $key: white);
       font-family: Inter, sans-serif;
-      margin-top: 28px;
+      margin-top: 29px;
       font-size: 12px;
       font-weight: 400;
     }
