@@ -93,6 +93,7 @@
         transition: all 0.3s ease-in-out;
 
         &:hover,
+        &:active,
         &:focus {
           background-color: $primary-color;
           color: map-get($map: $neutral-colors, $key: off-black);
