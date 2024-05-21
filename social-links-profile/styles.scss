@@ -46,7 +46,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
 
       .profile-name {
         color: map-get($map: $neutral-colors, $key: white);
