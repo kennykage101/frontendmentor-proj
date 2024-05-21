@@ -44,7 +44,7 @@
 }
 .container .profile-card .profile-details .profile-name {
   color: #FFFFFF;
-  margin-top: 30px;
+  margin-top: 28px;
   font-family: Inter, sans-serif;
   font-size: 23px;
   font-weight: 700;
@@ -80,9 +80,9 @@
   width: 304px;
   border-radius: 6px;
   background-color: #333333;
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.3s ease-in-out;
 }
-.container .profile-card .profile-links .profile-link:hover, .container .profile-card .profile-links .profile-link:focus {
+.container .profile-card .profile-links .profile-link:hover, .container .profile-card .profile-links .profile-link:active, .container .profile-card .profile-links .profile-link:focus {
   background-color: #c5f82a;
   color: #141414;
 }
