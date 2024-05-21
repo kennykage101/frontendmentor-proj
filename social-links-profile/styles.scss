@@ -90,7 +90,7 @@
         width: 304px;
         border-radius: 6px;
         background-color: map-get($map: $neutral-colors, $key: grey);
-        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 0.3s ease-in-out;
 
         &:hover,
         &:focus {
